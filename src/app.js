@@ -12,11 +12,6 @@ import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
 
-store.dispatch(addExpense({description:'Water bill', node:'none', amount:300}));
-store.dispatch(addExpense({description:'Gas bill', node:'none', amount:0, createdAt:1000}));
-store.dispatch(addExpense({description:'Water bill', node:'none', amount:100}));
-console.log(getVisibleExpenses(store.getState().expenses,store.getState().filters));
-
 const jsx = (
     <Provider store={store}>
         <AppRouter />
