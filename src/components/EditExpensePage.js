@@ -14,6 +14,7 @@ export class EditExpensePage extends React.Component{
         this.props.history.push('/');
     }
     render(){
+        console.log(this.props);
         return (
             <div>
                 <ExpenseForm 
@@ -36,7 +37,7 @@ const mapDispatchToProps = (dispatch,props) =>{
 }
 const mapStateToProps = (state, props) =>{
     return {
-        expense: state.expenses.find((expense)=> expense.id === props.expense.id)
+        expense: state.expenses.find((expense)=> expense.id === props.match.params.id)
     };
 };
 
