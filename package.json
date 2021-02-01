@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "tal oved",
+  "engines": {
+    "node": "8.4.0"
+  },
   "license": "MIT",
   "scripts": {
     "build:dev": "webpack",
