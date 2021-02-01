@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "tal oved",
+  "engines": {
+    "node": "8.11.1"
+  },
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
