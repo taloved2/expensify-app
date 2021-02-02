@@ -4,20 +4,16 @@ exports[`should render an expense item 1`] = `
 <div>
   <Link
     replace={false}
-    to="/edit/1"
+    to="/edit/undefined"
   >
     <h3>
       description: 
-      Gum
     </h3>
   </Link>
   <p>
-    amount: 
-    195
-  </p>
-  <p>
-    created at: 
-    0
+    $0.00
+    -
+    January 1st, 1970
   </p>
 </div>
 `;
