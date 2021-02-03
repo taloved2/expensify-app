@@ -11,8 +11,6 @@ import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
-store.dispatch(addExpense({amount:'1300', description:'Winner',createdAt:10000}));
-console.log(store.getState());
 const jsx = (
     <Provider store={store}>
         <AppRouter />
