@@ -9,7 +9,7 @@ import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css'; //מאפס את הגדרות הדפדפן השונים לפי העיצוב שלהם ומתחיל את כולם מאותו המקום
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
-
+import './firebase/firebase';
 const store = configureStore();
 const jsx = (
     <Provider store={store}>
