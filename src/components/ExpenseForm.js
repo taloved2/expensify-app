@@ -46,7 +46,7 @@ export default class ExpenseForm extends React.Component{
         if(!this.state.description || !this.state.amount)
         {
             this.setState(()=>({
-                error: 'Please insert valid info'
+                error: 'Please provide description and amount.'
             }));
         }
         else{
@@ -63,8 +63,8 @@ export default class ExpenseForm extends React.Component{
     }
     render(){
         return (
-            <div>
-                <form onSubmit={this.onSubmit}> 
+                <form className="form" onSubmit={this.onSubmit}>
+                    {this.state.error && <p className="form__error">{this.state.error}</p>} 
                     <input 
                         className="text-input"
                         type="text" 
@@ -95,9 +95,10 @@ export default class ExpenseForm extends React.Component{
                         onChange={this.onNoteChange}
                     ></textarea>
                     {this.state.error&&<p>{this.state.error}</p>}
-                    <button>Add Expense</button>
+                    <div>
+                        <button className="button">Save Expense</button>
+                    </div>
                 </form>
-            </div>
         );
     }
 }
