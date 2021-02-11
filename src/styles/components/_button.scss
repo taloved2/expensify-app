@@ -5,4 +5,13 @@
     padding: $s-size;
     color: white;
     border: none;
+    line-height:1;
+    display:inline-block;
+    text-decoration: none;
+}
+
+.button--link{
+    background:none;
+    color: white;
+    border: none;
 }
