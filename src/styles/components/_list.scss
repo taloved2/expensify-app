@@ -3,6 +3,7 @@
     border: 1px solid darken($off-white, 7%);
     color:$dark-gray-2;
     display: flex;
+    font-weight: 600;
     justify-content: space-between;
     padding: $s-size $m-size
 }
@@ -51,6 +52,13 @@
 
 .list-item__subtitle{
     color:$dark-gray-2;
+    font-size: $font-size-small;
+    margin:0;
+}
+.list-item__subdata{
+    color: $dark-gray-2;
+    word-break: break-all;
+    margin:0;
     font-size: $font-size-small;
 }
 
