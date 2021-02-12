@@ -8,7 +8,7 @@ const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate,note, m
         const textMatch = expense.description.toLowerCase().includes(text.toLowerCase());
         const startDateMatch = startDate? startDate.isSameOrBefore(createdAtMoment, 'day') : true;
         const endDateMatch =  endDate? endDate.isSameOrAfter(createdAtMoment, 'day') : true;
-        const noteMatch = note? expense.note.toLowerCase().includes(note) : true;
+        const noteMatch = note? expense.note.toLowerCase().includes(note.toLowerCase()) : true;
         const minAmountMatch = minAmount !== 0? (minAmount*100)<=expense.amount : true;
         const maxAmountMatch =  maxAmount !== 0? expense.amount<=(maxAmount*100) : true;
         return textMatch && startDateMatch && endDateMatch&&noteMatch&&minAmountMatch&&maxAmountMatch;
