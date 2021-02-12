@@ -22,3 +22,18 @@ export const setEndDate = (endDate) =>({
     type: 'SET_END_DATE',
     endDate
 });
+
+export const setNoteFilter = (note='') =>({
+    type: 'SET_NOTE_FILTER',
+    note
+});
+
+export const setMinAmount = (minAmount=0) =>({
+    type: 'SET_MIN_AMOUNT',
+    minAmount
+});
+
+export const setMaxAmount = (maxAmount=0) =>({
+    type: 'SET_MAX_AMOUNT',
+    maxAmount
+});
