@@ -10,6 +10,11 @@
     text-decoration: none;
 }
 
+.button--cancel{
+    background-color: gray;
+    margin-left: $s-size;
+}
+
 .button--link{
     background:none;
     color: white;
@@ -17,5 +22,7 @@
 }
 
 .button--secondery{
-    background:$gray;
+    
+    background:darken($gray,15%);
+    margin-bottom: $l-size;
 }
